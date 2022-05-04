@@ -52,13 +52,13 @@ function App() {
       <header>
         <div className="wrapper">
           <h1>Welcome to 2022 World Cup Champion's path</h1>
-          <p>Let's figure it out what opponets you team will face up to become the champion</p>
+          <p>Let's figure out which opponets your team will face up to become the champion</p>
         </div>
       </header>
 
       <main>
         <section className="groupPhase wrapper">
-          <p>Let's start by select the first and second place of each group and hit sumbit. Do this for each group at a time</p>
+          <p>Let's start by selecting the first and second place of each group and hitting sumbit. Do so for each group at a time</p>
           <div className="initialGroups">
             {
               groups.map((group) => {
