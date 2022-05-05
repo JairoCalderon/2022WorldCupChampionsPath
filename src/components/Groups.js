@@ -28,27 +28,29 @@ const Groups = ({ group, setSelectedGroups, selectedGroups, setQuarterFinalTeams
             </ul>
             <ul>
                 <li>
-                    <label htmlFor="classGroup1" className="sr-only">First Place</label>
-                    <select name="FirstPlace" id="classGroup1" onChange={handleUser1Choice}>
+                    <form>
+                        <label htmlFor="classGroup1" className="sr-only">First Place</label>
+                        <select name="FirstPlace" id="classGroup1" onChange={handleUser1Choice}>
 
-                        <option hidden value>1st - {group.name} </option>
+                            <option hidden value>1st - {group.name} </option>
 
-                        {group.teams.filter((team) => team !== selectedGroups[group.id]?.second).map(team => (<option key={team} value={team}>{team}</option>
-                        ))
-                        }
+                            {group.teams.filter((team) => team !== selectedGroups[group.id]?.second).map(team => (<option key={team} value={team}>{team}</option>
+                            ))
+                            }
 
-                    </select>
+                        </select>
+
+                    </form>
 
                 </li>
                 <li>
-                    <label htmlFor="classGroup2" className="sr-only">Second Place</label>
-                    <select name="SecondPlace" id="classGroup2" onChange={handleUser2Choice}>
-                        <option hidden value>2nd - {group.name}</option>
-                        {group.teams.filter((team) => team !== selectedGroups[group.id]?.first).map(team => <option key={team} value={team}>{team}</option>)}
-
-
-                    </select>
-
+                    <form>
+                        <label htmlFor="classGroup2" className="sr-only">Second Place</label>
+                        <select name="SecondPlace" id="classGroup2" onChange={handleUser2Choice}>
+                            <option hidden value>2nd - {group.name}</option>
+                            {group.teams.filter((team) => team !== selectedGroups[group.id]?.first).map(team => <option key={team} value={team}>{team}</option>)}
+                        </select>
+                    </form>
                 </li>
             </ul>
             <button onClick={handleUserQuarterFinalTeams}>Submit</button>
