@@ -1,0 +1,42 @@
+[
+    {
+        "id": "grpA",
+        "name": "Group A",
+        "teams": [
+            "Qatar",
+            "Ecuador",
+            "Senegal",
+            "Netherlands"
+        ]
+    },
+    {
+        "id": "grpB",
+        "name": "Group B",
+        "teams": [
+            "England",
+            "Iran",
+            "USA",
+            "Ukraine"
+        ]
+    },
+    {
+        "id": "grpC",
+        "name": "Group C",
+        "teams": [
+            "Argentina",
+            "Saudi Arabia",
+            "Mexico",
+            "Poland"
+        ]
+    },
+    {
+        "id": "grpD",
+        "name": "Group D",
+        "teams": [
+            "France",
+            "Peru",
+            "Denmark",
+            "Tunisia"
+        ]
+    }
+]
